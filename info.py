@@ -25,10 +25,10 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-OWNER_ID = environ.get('OWNER_ID', '6497757690')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '7713526'))
+API_HASH = environ.get('API_HASH', '6f87b351ddf6c8c56999f8ba5b19cc7c')
+OWNER_ID = environ.get('OWNER_ID', '5071463525')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6898397200:AAFEcRG9TcoQTcWoicmJrDfrEvV0l0oZMuI")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -55,8 +55,8 @@ CHAT_GROUP = int(environ.get("CHAT_GROUP", "-1001953724858"))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6497757690 5115691197').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001619818259').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002206282617').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5071463525').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '6497757690').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '') #Channel / Group Id for force sub ( make sure bot is admin )
@@ -93,7 +93,7 @@ REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal coun
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1 week')
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'sewxiy') # owner username without @
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001868871195')) #Log channel id ( make sure bot is admin )
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001580437794')) #Log channel id ( make sure bot is admin )
 DUMP_CHNL = int(environ.get('DUMP_CHNL', '-1002067012611'))
 
 # Verify
